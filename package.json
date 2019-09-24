@@ -1,0 +1,31 @@
+{
+  "name": "gcp_api_node",
+  "description": "Creating API in GCP using App Engine (standard) and Node with a connection to a (NoSQL) Cloud Datastore database.",
+  "version": "1.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "author": "Subarna Chakrabarti",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/subachakomvux/GCP_API.git"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "system-test": "repo-tools test app",
+    "test": "npm run system-test"
+  },
+  "dependencies": {
+    "@google-cloud/datastore": "^3.1.2",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "@google-cloud/nodejs-repo-tools": "^3.3.0"
+  },
+  "cloud-repo-tools": {
+    "requiresKeyFile": true,
+    "requiresProjectId": true
+  }
+}
